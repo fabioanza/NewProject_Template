@@ -1,0 +1,111 @@
+\documentclass[aps,rmp,twoside,onecolumn,notitlepage,superscriptaddress,10pt]{revtex4-1}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+\usepackage{hhline}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\usepackage{amsfonts,bbm}
+\usepackage{amssymb,amscd}
+\usepackage{enumitem}
+\usepackage{tikz}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{hypothesis}{Hypothesis}
+
+\newcommand{\cev}[1]{\reflectbox{\ensuremath{\vec{\reflectbox{\ensuremath{#1}}}}}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\Hilb}{\mathcal{H}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\HH}{\Hilb}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\Ug}{\mathcal{U}\mathfrak{g}}
+\newcommand{\Tg}{\mathcal{T}\mathfrak{g}}
+\newcommand{\Sg}{\mathcal{S}\mathfrak{g}}
+\newcommand{\Us}{\mathcal{U}\mathfrak{s}}
+\newcommand{\Ss}{\mathcal{S}\mathfrak{s}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\E}{\mathbf{E}}
+\newcommand{\Ut}[1]{\undertilde{#1}}
+\newcommand{\1}{\mathbbm{1}}
+\newcommand{\circled}[1]{\tikz[baseline=(C.base)]\node[draw,circle,inner sep=1.2pt,line width=0.2mm,](C) {\small #1};\!}
+\newcommand{\Pexp}[1]{\mathrm{Pexp} \left[ #1 \right] }
+\newcommand{\Ch}[1]{ \mathrm{Ch} \; #1}
+\newcommand{\Sh}[1]{ \mathrm{Sh} \; #1}
+\newcommand{\Ket}[1]{ \left| #1 \right\rangle}
+\newcommand{\Bra}[1]{ \left\langle #1 \right|}
+\newcommand{\Scal}[2]{ \left\langle #1 | #2 \right\rangle}
+\newcommand{\KetQ}[1]{ \left| #1 \right]}
+\newcommand{\BraQ}[1]{ \left[ #1 \right|}
+\newcommand{\ScalQ}[2]{ \left[ #1 | #2 \right]}
+\newcommand{\Miss}[2]{ \left[ #1 | #2 \right\rangle}
+\newcommand{\MissQ}[2]{ \left\langle #1 | #2 \right]}
+\newcommand{\ZT}{\undertilde{z}}
+\newcommand{\MV}[1]{\left\langle #1 \right\rangle}
+\newcommand{\MC}[1]{\left\langle #1 \right\rangle_{\mathrm{mc}}}
+\newcommand{\braket}[2]{\langle #1 | #2 \rangle}
+\newcommand{\ketbra}[2]{| #2 \rangle\langle #1 |}
+\newcommand{\ket}[1]{| #1 \rangle}
+\newcommand{\bra}[1]{\langle #1 |}
+\renewcommand{\equiv}{\coloneqq}
+\DeclareMathOperator{\XN}{X_{1:N}}
+
+% ----------------------------------------------------------------
+
+\def\d{\delta}
+\def\f{\frac}
+\def\om{\omega}
+\def\w{\wedge}
+\def\la{\langle}
+\def\ra{\rangle}
+\newcommand{\p}{\partial}
+\newcommand{\n}{\nabla}
+
+
+\newcommand{\cg}[1]{{\color{blue}[[CG: #1]]}}
+\newcommand{\fa}[1]{{\color{red}[[FA: #1]]}}
+\newcommand{\cut}[1]{{\color{purple}[[CUT?: #1]]}}
+
+
+
+\begin{document}
+\date{\today}
+\title{Title for new notes}%
+\author{Fabio Anza}
+\affiliation{Complexity Sciences Center \&
+Physics Department,
+University of California at Davis,
+One Shields Avenue, Davis, CA 95616}
+
+
+
+
+\maketitle 
+\lipsum
+
+\begin{figure}
+\includegraphics[h!]{./img/random_figure.pdf}
+\end{figure}
+
+
+
+
+\end{document}
+
+

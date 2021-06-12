@@ -1,0 +1,44 @@
+GitHub website has good resources to handle the most common problems.
+To set up a new repo:
+1) Verify that you are in sync with SSH keys. Check GitHub website for how to do it.
+  A) ssh -T git@github.com
+2) Create the new repo on GitHub. Assume name is: new_repo
+3) On your terminal:
+  A) mkdir new_repo
+  B) git clone git@github.com:fabioanza/new_repo.git #Local repo is now set
+  C) cd new_repo
+4) Configure the global variables
+  A) git config --global user.name "fabioanza"
+  B) git config --global user.name "email@fabioanza.com"
+5) Add a new file, for an initial commit. It's a sanity check.
+  A) touch sanity_check.txt
+  B) open sanity_check.txt
+  C) Write something: "Prova"
+  D) git add sanity_check.txt
+  E) git commit -am "FA: sanity_check file added. Initial commit"
+  F) git push
+6) Check that everything went well:
+  A) git pull should give you "Already up to date"
+  B) git status should give you:
+        On branch main
+        Your branch is up to date with 'origin/main'.
+
+        nothing to commit, working tree clean
+7) Add a .gitignore file for those files you don't want git to track.
+  A) touch .gitignore
+8) Create a local branch for the machine your are currently using.
+  A) git branch new_branch (only creates it)
+  B) git checkout new_branch (moves from main onto the new_branch)
+9) Create a mockup file and then merge
+  A) touch fornewbranch.txt
+  B) open fornewbranch.txt (write something on it)
+  C) git branch main (back onto the master branch.)
+  D) ls (check that the file fornewbranch.txt is not present)
+  E) git merge new_branch
+    1) It enters onto a vim file, which will contain some comments about the merging process.
+    2) i (inster mode)
+    3) Write a comment: First merge, trial run
+    4) ESC
+    5) :wq
+  F) Finished merging. Check status to see if there are local changes to push onto
+  the main branch: git status
