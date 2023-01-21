@@ -9,7 +9,7 @@ To set up a new repo:
   C) cd new_repo
 4) Configure the global variables
   A) git config --global user.name "fabioanza"
-  B) git config --global user.name "email@fabioanza.com"
+  B) git config --global user.mail "email@fabioanza.com"
 5) Add a new file, for an initial commit. It's a sanity check.
   A) touch sanity_check.txt
   B) open sanity_check.txt
